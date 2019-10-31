@@ -1,0 +1,695 @@
+@import "normalize.styl"
+@import "icons.styl"
+@import "basic.styl"
+
+html,body
+	position: relative;
+	color:#444
+	//width: 100%;
+	//height: 100%;
+	//overflow: hidden;
+	//overflow-y: auto;
+
+body 
+	&.nav-is-open
+		.nav-container 
+			left 0
+			right 0
+			width 100%
+			visibility visible
+		.nav-menu 
+			li 
+				transform: translateX(0);
+				opacity 1
+			
+		
+		.nav-btn-menu
+			color white !important
+			.fa-bars
+				&:before
+					content '\f00d'
+	&.home 
+		background-color celeste//#444
+.page-bg
+	background-color white
+	//background-image url('./img/bg.jpg')
+	background-position center center
+	//background: 50%;
+	background-size: cover;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	&-gradient
+		background: linear-gradient(0deg,#000,rgba(70,31,65,0));
+		bottom: 0;
+		height: 50vh;
+		left: 0;
+		z-index: 150;
+		position: absolute;
+		width: 100%;
+		pointer-events: none;
+
+@media screen and (min-width: 768px)
+	.page-bg
+		background-image none
+
+.nav
+	&-container 
+		position fixed
+		background-color rgba(0,0,0,.75)
+		left -350px
+		top 0
+		right 0
+		bottom 0
+		width 350px
+		z-index 901
+		visibility hidden
+		overflow hidden
+		transition all .85s cubic-bezier(.4,0,.2,1)
+		
+			
+	&-menu
+		position relative 
+		background-color transparent
+		width 100%
+		left 0
+		color white
+		padding-left 40px
+		padding-top 80px
+		padding-bottom 80px
+		li
+		&-item
+			display block
+			line-height 3rem
+			transform: translateX(-100%)
+			transition: transform .45s cubic-bezier(.4,0,.2,1),opacity .3s cubic-bezier(.4,0,.2,1);
+			//transition all .5s ease
+			opacity 0
+			&:nth-child(1)
+				transition-delay .19s
+			&:nth-child(2)
+				transition-delay .23s
+			&:nth-child(3)
+				transition-delay .27s
+			&:nth-child(4)
+				transition-delay .31s
+			&:nth-child(5)
+				transition-delay .35s
+			&:nth-child(6)
+				transition-delay .39s
+			
+		a
+		&-link
+			display block
+			color white
+			font-weight 700
+			font-size 1.6rem
+			&:hover
+				color azul 
+				margin-left 1rem
+			
+	&-btn-menu
+		position absolute
+		background-color transparent
+		top 15px
+		left 15px
+		z-index 902
+		border none
+		color white
+		font-size 2rem//2.8rem
+		outline none
+		transition all .3s ease
+		.fa-bars
+			&:before
+				transition all .3s ease
+
+
+/*.nav
+		&-btn-menu
+			top 15px
+			left 35px
+		&-menu
+			padding-top: 6.5rem;
+			padding-bottom: 2.5rem;
+			padding-left: 7.5rem;
+			li 
+				line-height 5rem
+			a
+				font-size 3.75rem*/
+
+body.header-white
+	.header
+		background-color #FFF
+		box-shadow: 1px 1px 5px rgba(0,0,0,.25)
+		&-logo
+			color azul
+		
+			
+	.nav-btn-menu
+		color azul
+	.lang
+		color white
+		a
+			color: white
+
+// body.page.home
+// 	.header
+// 		background-color transparent
+// 		box-shadow: none
+// 		&-logo
+// 			color white
+			
+// 	.nav-btn-menu
+// 		color white
+
+.header
+	position absolute
+	left 0
+	right 0
+	width 100%
+	background-color white
+	top 0
+	z-index 900
+	height 75px
+	transition all .5s ease
+	
+	&-logo
+		z-index: 300;
+		position relative
+		color white
+		font-weight 500
+		//font-size 2rem
+		text-align center
+		transition all .3s ease
+		padding 5px//1rem 15px //2.65rem 0
+		max-width 343px //33.33%
+		display block
+	
+		
+
+	&-contact
+		//display none
+		text-align right
+		padding-right 1rem
+		padding-top 1rem
+		z-index: 300;
+		position relative
+		
+		span.text
+			display none 
+		span.icon
+			display block
+			font-size 1.8rem
+		a 
+			display block
+			color #000
+		.btn
+			padding 0.2rem 0.5rem 0.2rem 0.5rem
+			background transparent
+			&:hover
+				background transparent
+			//line-height 20px
+	.lang
+		color azul
+		margin-left: 7rem
+		margin-top: 1rem
+		font-size: 1rem
+		a
+			display inline-block
+			color azul
+	&-btn-menu
+		width 20%//135px
+		height 112px //135px
+		
+		
+@media screen and (min-width: 768px)
+	.header
+		&-logo
+			padding 5px//1rem 15px //2.65rem 0
+			max-width 343px//max-width 33.33%
+
+		&-contact
+			display block
+			//width 30%
+			padding-right 60px
+			span.text
+				display block
+			span.icon 
+				display none
+			.btn
+				background celeste
+				&:hover
+					background azul
+		&--fixed
+			.header
+				background-color #FFF
+				
+				position fixed
+				top 0
+				
+				.lang
+					color azul
+					a 
+						color azul
+				&-logo
+					color azul
+					
+			.nav-btn-menu
+				position fixed
+				color azul
+			
+			
+		
+		
+	.nav
+		&-btn-menu
+			top 15px
+			left 60px
+			color azul
+		&-menu
+			padding-top: 6.5rem;
+			padding-bottom: 2.5rem;
+			padding-left: 7.5rem;
+			li 
+				line-height 5rem
+			a
+				font-size 3.75rem
+	
+		
+@media screen and (min-width: 1000px)
+	.nav
+		&-aside
+			left auto
+			right 0
+			bottom 0
+			top 0
+			padding 0rem 4rem
+			.social
+				margin-top 6rem
+				li 
+					display block
+					
+					a 
+						color white
+						
+						font-size 1.5rem
+						padding 1.5rem 1rem
+			.copy
+				bottom 2rem 
+				left auto
+	
+
+@media screen and (min-width: 1200px)
+	.header
+		&-btn-menu
+			width 180px
+			//height 120px
+
+
+@media screen and (min-width: 1400px)
+	.header
+		/*&-logo
+			//padding .4rem 0
+			width 12rem*/
+		&-btn-menu
+			width 175px
+			height 135px
+			font-size 2.8rem
+	/*.nav
+		&-btn-menu
+			font-size 2.8rem*/
+
+
+.banner 
+	width: 100%;
+	min-height: 465px;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+	background: url(./img/bg-banner.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height 100vh
+	z-index 2
+	.item
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		top: 0;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: cover
+		
+		/*&.bgPage
+			background-position: center center;
+			background-repeat repeat,no-repeat,no-repeat
+			background-size auto auto,cover,cover
+			position: static;
+			height: 260px;*/
+
+	&.banner-page
+		min-height: auto
+		height 100vh
+		padding-top: 6rem
+		position: fixed 
+	&-title
+		position fixed
+		left 50%
+		top 30%
+		transform translate(-50%, 30%)
+		z-index 800
+		color white
+		
+		
+		//text-transform uppercase
+		text-align center
+		//transition all .5s ease
+		h3 
+			font-size 3.5rem
+			margin-bottom 0
+			font-weight 900
+			margin-bottom 2rem
+			line-height 48px
+			opacity 0
+			//text-shadow: 1px 1px 2px rgba(0,0,0,.55)
+			//transition all .5s ease
+		p 
+			font-size 1.3rem
+			opacity 0
+			font-weight 300
+			color red
+			//transition all .5s ease
+			
+		&.inSection
+			h3
+				color azul
+			p
+				color red
+				opacity 1
+				transition all .5s ease
+		
+	.home-video-content
+		background-color: #FFF;
+		//position: relative !important;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	&:before
+		content ""
+		z-index 1
+		position absolute
+		//background url(./img/pattern.png) repeat;
+		background-color: rgba(0,0,0,.15);
+		top 0
+		left 0
+		width 100%
+		height 100%
+		
+	video
+		min-width: 100%;
+		min-height: 100%;
+		position: absolute;
+		top: -5%;
+		left: 0%;
+		margin: 0px;
+		padding: 0px;
+		//display none
+		
+@media screen and (min-width:768px)
+	.banner 
+		video
+			display block
+
+.main 
+	padding-top: 8rem
+	padding-bottom: 8rem
+	.entry-title
+		margin-bottom: 2rem
+.intro
+	//background-color white
+	padding-top 6rem 
+	padding-bottom 6rem
+	height 100vh
+	width 100%
+.services
+	//height 100vh
+	width 100%
+	//background-color #444
+	padding-top 8rem 
+	padding-bottom 8rem
+	padding-left 22px
+	padding-right 22px
+	&-title 
+		font-size 3.5rem//6rem
+		text-align center
+		margin-bottom 3rem
+		color white//#3a3a3a
+	&-container
+		//max-width 1000px
+		margin 0 auto
+	&-item 
+		position relative
+		width 100%
+		margin-bottom 1rem
+		
+		&-full
+			background: #3a3a3a;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			transform-origin: top;
+			overflow: hidden;
+			
+			transform: translateY(-50%),translateZ(0);
+			transform: translateY(-50%);
+			padding: 0 70px;
+			height: 100%;
+			-webkit-clip-path: none;
+			clip-path: none;
+			
+			transition: -webkit-clip-path .6s cubic-bezier(.165,.84,.44,1);
+			transition: clip-path .6s cubic-bezier(.165,.84,.44,1);
+			transition: clip-path .6s cubic-bezier(.165,.84,.44,1),-webkit-clip-path .6s cubic-bezier(.165,.84,.44,1);
+		&-img
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 540px;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 9;
+			opacity: .1;
+			overflow: hidden;
+			transition: opacity .6s cubic-bezier(.165,.84,.44,1);
+			background-position center center
+			background-size cover
+			
+		&-link
+			width: 100%;
+			display: block;
+			padding-bottom: 62%;
+			position: relative;
+			background: #2f2f2f;
+			transform: translateZ(0);
+			filter: grayscale(100%);
+			filter: gray;
+			text-align center
+			z-index 10
+			color white
+
+		&-title 
+			font-size: 30px;
+			line-height: 1.35em;
+			color: #fff;
+			margin-bottom: 38px;
+			position absolute
+			width 100%
+			z-index 9
+			top: 50%;
+			transform: translateY(-50%);
+			height 96px
+			padding: 0 70px;
+			transition all .5s ease
+		&-content
+			opacity: 0;
+			position: absolute;
+			left: 0;
+			bottom: -30px;
+			padding: 0 38px;
+			z-index: 99;
+			transition opacity .5s ease
+			.btn 
+				margin-top 1rem
+				display block
+				background-color: azul
+				&:hover
+					background-color: celeste
+
+@media screen and (min-width:640px)
+	.services
+		&-title 
+			font-size 6rem
+			margin-bottom 6rem
+		&-item 
+			&-title
+				font-size: 36px;
+				line-height: 1.35em;
+			
+@media screen and (min-width:768px)
+	.services
+		&-container
+			max-width 540px
+			margin 0 auto
+		
+@media screen and (min-width:1000px)
+	.services
+		height 100vh
+		&-container
+			max-width 1400px
+		&-item 
+			position relative
+			width 32%
+			top 20rem
+			opacity 0
+			&:hover
+				.services-item-link
+					filter: grayscale(20%);
+					filter: none
+				.services-item-full
+					-webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+					clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+				.services-item-img
+					opacity: .6;
+				.services-item-title
+					transform: matrix(1, 0, 0, 1, 0, -150);
+				.services-item-content
+					opacity 1
+			
+			&-link 
+				padding-bottom: 87.5%;
+			&-full
+				height: 138%; 
+				-webkit-clip-path: polygon(0 14%,100% 14%,100% 86%,0 86%);
+				clip-path: polygon(0 14%,100% 14%,100% 86%,0 86%);
+
+/*.scroll-wrapper
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;	*/
+.case
+	position relative
+	padding-top 6rem 
+	padding-bottom 6rem
+	padding-left 3rem 
+	padding-right 3rem
+	z-index 2
+	&-container
+		max-width 1400px
+		margin 0 auto
+	&-media
+	&-info
+		width 100%	
+	&-media
+		img 
+			position relative
+			top 0
+			&:before
+				content ''
+				position fixed
+	&-info
+		padding-left 2rem
+		color #444
+		&-item 
+			opacity 0
+			left -80px
+			position relative
+		h2
+			margin-bottom 2rem
+
+@media screen and (min-width:768px)
+	.case
+		padding-left 5rem 
+		padding-right 5rem
+		&-media
+		&-info
+			width 49%	
+
+.main 
+	height: 100%;
+
+.footer
+	background-color #2f2f2f
+	padding-top 4rem
+	padding-bottom 4rem
+	padding-left 4rem
+	padding-right 4rem
+	position relative
+	z-index 2
+	colo white
+	
+		
+	&-container
+		max-width 1400px
+		margin 0 auto
+	&-blog
+		width 100%
+		margin-bottom 1rem
+		h4 
+			color #969696
+			font-size 1rem 
+			text-transform uppercase
+			font-weight 900
+		p 
+			font-size 2rem
+			color white
+			line-height 45px
+	&-contact
+		width 100%
+		
+		
+		h4 
+			color white
+			text-transform uppercase
+			font-weight 900
+		p 
+			
+			color #969696
+	&-social
+		a 
+			font-size 2rem 
+			padding .5rem 1rem
+			display inline-block
+			color white
+			&:hover
+				color azul
+				
+@media screen and (min-width:900px)
+	.footer
+		&-blog
+			width 65%
+		&-contact
+			width 30%
+			padding-left 4rem 
+			border-left 1px solid #c3c3c3
+			
+	
+
+/*
+section#titlechart {
+	text-align: center;
+	position: relative;
+	height: 100%;
+	min-height: 500px;
+	min-width: 100%;
+	height: 100vh;
+}*/
+	
+
+
