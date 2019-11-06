@@ -25,13 +25,14 @@ get_header();
 <div class="home-video">
 
 		  <div class="home-video-content">
-			  
-			  <video preload="" autobuffer="" loop="loop" autoplay="autoplay">
+		  	<div style="padding:56.25% 0 0 0;position:relative;"><iframe class="video" src="https://player.vimeo.com/video/371253013?autoplay=1&title=0&byline=0&portrait=0&loop=1&color=cb0000" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		  
+			  <!-- <video preload="" autobuffer="" loop="loop" autoplay="autoplay">
 				 
 				 <source src="<?php echo get_template_directory_uri(); ?>/img/video.mp4" type="video/mp4">
-				<!-- <source src="<?php echo get_template_directory_uri(); ?>/img/video.webm" type="video/webm">
-				<source src="<?php echo get_template_directory_uri(); ?>/img/video.ogv" type="video/ogg"> -->
-			  </video>
+				 <source src="<?php echo get_template_directory_uri(); ?>/img/video.webm" type="video/webm">
+				<source src="<?php echo get_template_directory_uri(); ?>/img/video.ogv" type="video/ogg"> 
+			  </video> -->
 			  
 		  </div>
 	  </div>

@@ -156,8 +156,13 @@ $(window).on('load', function (e) {
 
 $(window).resize(resize);
 
+let banner = $('.banner');
+
+let video = $('.video');
 function resize () {
    
+  banner.height(video.height());
+  
 }
 
 
