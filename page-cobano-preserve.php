@@ -32,7 +32,7 @@ get_header('page');
 		endwhile; // End of the loop.
         ?>
         
-        <section class="interactive-map">
+        <section class="interactive-map" data-simplebar>
 	
             <div class="map">
                 <div class="map-links">

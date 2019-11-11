@@ -4,6 +4,7 @@ require('./vendor/smooth-scrollbar.js');
 import ScrollMagic from 'scrollmagic'; 
 import { TimelineMax, TweenMax, Linear } from 'gsap';
 import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import 'simplebar';
 const hoverintent = require('hoverintent');
 
 ;(function($){
