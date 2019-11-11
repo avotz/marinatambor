@@ -231,13 +231,13 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(94, 110, 141, 0.9);
+  background-color: rgba(94, 110, 141, 0.5);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
   -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  z-index 3
+  z-index 10
 }
 .cd-popup.is-visible {
   opacity: 1;
@@ -250,7 +250,7 @@
 .cd-popup-container {
   position: relative;
   width: 90%;
-  max-width: 400px;
+  max-width: 768px;
   margin: 4em auto;
   background: #FFF;
   border-radius: .25em .25em .4em .4em;
