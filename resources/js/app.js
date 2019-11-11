@@ -152,7 +152,55 @@ $(window).on('load', function (e) {
  
 })
 
+//////// mapa ///////////////////////
+let iteractiveMap = $('.interactive-map .map');
 
+let mapLinks = document.querySelectorAll('.map-links .map-button');
+mapLinks.forEach(element => {
+  hoverintent(element,
+      function () {
+        console.log('hover link map ' + $(element).attr('id'))
+        iteractiveMap.addClass($(element).attr('id'))
+      }, function () {
+        console.log('hover link map ' + $(element).attr('id'))
+        iteractiveMap.removeClass($(element).attr('id'))
+      }).options({
+          timeout: 200,
+          interval: 50
+      });
+});
+
+$(".circle-main").mouseup(function(e) {
+  $("<div class='circle-pulse'></div>")
+    .appendTo(".circle-main")
+    .delay(1100)
+    .queue(function() {
+      $(this).remove();
+    });
+});
+
+$('.cd-popup-trigger').on('click', function(event){
+  event.preventDefault();
+  
+  $('.'+ $(this).attr('data-id')).addClass('is-visible');
+});
+
+//close popup
+$('.cd-popup').on('click', function(event){
+
+  if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+    event.preventDefault();
+    $(this).removeClass('is-visible');
+  }
+});
+//close popup when clicking the esc keyboard button
+$(document).keyup(function(event){
+    if(event.which=='27'){
+      $('.cd-popup').removeClass('is-visible');
+    }
+  });
+
+/////////////////////////////////////////////////
 
 $(window).resize(resize);
 

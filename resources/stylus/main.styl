@@ -1,7 +1,8 @@
 @import "normalize.styl"
 @import "icons.styl"
 @import "basic.styl"
-
+@import "map.styl"
+@import "../css/animate.css"
 html,body
 	position: relative;
 	color:#444
@@ -623,6 +624,93 @@ body.header-white
 		&-media
 		&-info
 			width 49%	
+
+.interactive-map
+	position relative
+	overflow-x scroll
+	z-index 2
+	.map
+		background-image url('./img/full-map.jpg');
+		background-repeat no-repeat
+		background-position 0 0
+		width 1280px
+		height 905px
+		overflow hidden
+		margin 0 auto
+		position relative
+		&-links
+		
+			.map-button
+				position absolute
+				z-index 2
+
+			#zone-5a-tourist-town
+			#zone-5a
+			#zona-5a-pueblo-turistico
+			#zona-5a
+				right: 390px;
+				bottom: 55px;
+
+			#zone-5b-hospital-clinic
+			#zone-5b
+			#zona-5b-clinica-hospitalaria
+			#zona-5b
+				left: 170px;
+				top: 375px;
+			#zone-5
+			#zona-5
+				right: 650px;
+				bottom: 293px
+			#zone-4
+			#zona-4
+				right: 200px;
+				bottom: 370px;
+
+			#zone-1
+			#zona-1
+				left: 550px;
+				top: 190px;
+			#zone-2
+			#zona-2
+				right: 350px;
+				top: 190px;
+			#zone-3
+			#zona-3
+				right: 465px;
+				top: 320px;
+
+		&.zona-5a-pueblo-turistico
+		&.zona-5a
+		&.zone-5a-tourist-town
+		&.zone-5a
+			background-position 0 -905px
+
+		&.zone-5b-hospital-clinic
+		&.zone-5b
+		&.zona-5b-clinica-hospitalaria
+		&.zona-5b
+			background-position 0 -2715px
+		
+		&.zona-5
+		&.zone-5
+			background-position 0 -1810px
+		
+		&.zona-4
+		&.zone-4
+			background-position 0 -3620px
+		
+		&.zona-1
+		&.zone-1
+			background-position 0 -4525px
+		
+		&.zona-2
+		&.zone-2
+			background-position 0 -5430px
+
+		&.zona-3
+		&.zone-3
+			background-position 0 -6335px
+
 
 .main 
 	height: 100%;
