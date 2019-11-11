@@ -18,7 +18,7 @@ get_header();
 <section class="banner">
 
 <div class="banner-title">
-	<h3 class="animated bounceIn">Project Tambor Marina</h3>
+	<h3 class="">Project Tambor Marina</h3>
 	<p class="">Punta Piedra Amarilla, PPA, is a property with 3.5 kilometers of coast dunk over Whale Bay where the famous Playa Tambor. Because of its location, beauty and unique terrain, PPA is a unique property for any tourism development. </p>
 	<p>In a certain corner of the coast, have been carrying out all research and inquiry, to know for sure about the suitability of that location to develop a Marine there and the results have been excellent.</p>
 </div> 
