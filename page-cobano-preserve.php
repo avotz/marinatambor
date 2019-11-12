@@ -31,6 +31,10 @@ get_header('page');
 
 		endwhile; // End of the loop.
         ?>
+        <div class="txt-center">
+            <h2>Interactive Map</h2>
+            <h3>Click the map point to show details </h3>
+        </div>
         
         <section class="interactive-map" data-simplebar>
 	
