@@ -14,17 +14,15 @@
 <footer class="footer">
          <div class="footer-container flex-container-sa">
             <div class="footer-item footer-blog">
-               <h4>Lorem ipsum sit amet</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a class="btn success">Contact Us</a>
+                <h4>About Us</h4>
+                <p>A multidisciplinary team, with high experience in real estate, legal consulting and project and business management.</p>
+                <a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="btn success">Contact Us</a>
             </div>
             <div class="footer-item footer-contact">
                 <div class="footer-contact-item">
                   <h4>Costa Rica</h4>
-                  <p>4000 lorem ipsum, Suite 295 <br>
-                  Guanacaste, Liberia <br>
-                  514.448.4016</p>
+                  <p>Marina Tambor <br>
+                  Tel:506+ 8317-0550</p>
                 </div>
                 <div class="footer-contact-item footer-social">
                   <h4>Social</h4>
