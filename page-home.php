@@ -23,7 +23,8 @@ get_header();
 
 		  <div class="home-video-content">
 			  <div style="padding:56.25% 0 0 0;position:relative;">
-			  	<div id="ytplayer" class="video" style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
+			  	<iframe class="video" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/ECw6staLSbE?autoplay=1&controls=0&loop=1&playlist=ECw6staLSbE&;showinfo=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			  	<!-- <div id="ytplayer" class="video" style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
 
 				<script>
 				// Load the IFrame Player API code asynchronously.
@@ -47,7 +48,7 @@ get_header();
 					controls:0
 					});
 				}
-				</script>
+				</script> -->
 			  <!-- <iframe class="video" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/ECw6staLSbE?autoplay=1&rel=0&controls=0&loop=1&showinfo=0," frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 			  
 			  <!-- <iframe class="video" src="https://player.vimeo.com/video/371253013?autoplay=1&title=0&byline=0&portrait=0&loop=1&color=cb0000" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
