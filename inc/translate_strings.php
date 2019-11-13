@@ -3,6 +3,7 @@
 if (function_exists('pll_register_string')) {
 
     pll_register_string('See details', 'See details', 'ALO');
+    pll_register_string('Contact Us', 'Contact Us', 'ALO');
     pll_register_string('contact-us', 'contact-us', 'ALO');
    
     
