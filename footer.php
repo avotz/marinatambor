@@ -14,15 +14,11 @@
 <footer class="footer">
          <div class="footer-container flex-container-sa">
             <div class="footer-item footer-blog">
-               <h4>About Us</h4>
-                <p>A multidisciplinary team, with high experience in real estate, legal consulting and project and business management.</p>
-                <a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="btn success">Contact Us</a>
+                <?php dynamic_sidebar( 'about-us-footer' ); ?>
             </div>
             <div class="footer-item footer-contact">
                 <div class="footer-contact-item">
-                  <h4>Costa Rica</h4>
-                  <p>Marina Tambor <br>
-                  Tel:506+ 8317-0550</p>
+                  <?php dynamic_sidebar( 'contact-footer' ); ?>
                 </div>
                 <div class="footer-contact-item footer-social">
                   <h4>Social</h4>

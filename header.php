@@ -23,9 +23,9 @@
 <body <?php body_class(); ?>>
 
 <div class="scroll-wrapper">
-          <div class="page-bg" >
-        <!-- <div class="page-bg-gradient"></div> -->
-      </div>
+      <!-- <div class="page-bg" >
+      
+      </div> -->
 
       <header class="header">
           <div class="header-container flex-container-sb">
@@ -34,7 +34,7 @@
                     <a href="<?php echo esc_url( home_url( '/home' ) ); ?>">EN</a> | <a href="<?php echo esc_url( home_url( '/inicio' ) ); ?>">ES</a>
                   </div>
               </div>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-marina-cobano-preserve2.png" alt="Marina Tambor"></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-marina-cobano-preserve3.png" alt="Marina Tambor"></a>
               <div class="header-contact">
                
                 <a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="btn success"><span class="text">Contact Us</span>

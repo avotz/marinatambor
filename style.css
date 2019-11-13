@@ -602,7 +602,7 @@ h2,
 h3 {
   font-weight: 900;
   font-size: 32px;
-  color: #261e1e;
+  color: #fff;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -1042,6 +1042,10 @@ iframe {
 }
 .cd-popup-container .info {
   padding: 3em 1em;
+  color: #444;
+}
+.cd-popup-container .info h3 {
+  color: #00bad2;
 }
 .cd-popup-container .cd-buttons:after {
   content: "";
@@ -1110,7 +1114,8 @@ iframe {
 html,
 body {
   position: relative;
-  color: #444;
+  color: #fff;
+  background-color: #00bad2;
 }
 body.nav-is-open .nav-container {
   left: 0;
@@ -1287,7 +1292,7 @@ body.header-white .lang a {
   text-align: center;
   transition: all 0.3s ease;
   padding: 5px;
-  max-width: 343px;
+  max-width: 450px;
   display: block;
 }
 .header-contact {
@@ -1332,7 +1337,7 @@ body.header-white .lang a {
 @media screen and (min-width: 768px) {
   .header-logo {
     padding: 5px;
-    max-width: 343px;
+    max-width: 450px;
   }
   .header-contact {
     display: block;
@@ -1528,18 +1533,32 @@ body.header-white .lang a {
 .intro {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  height: 100vh;
   width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.intro h3 {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  line-height: 48px;
+  color: #fff;
+}
+.intro p {
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 .services {
   width: 100%;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   padding-left: 22px;
   padding-right: 22px;
 }
 .services-title {
   font-size: 3.5rem;
+  line-height: 3.5rem;
   text-align: center;
   margin-bottom: 3rem;
   color: #fff;
@@ -1632,7 +1651,8 @@ body.header-white .lang a {
 }
 @media screen and (min-width: 640px) {
   .services-title {
-    font-size: 6rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
     margin-bottom: 6rem;
   }
   .services-item-title {
@@ -1647,8 +1667,9 @@ body.header-white .lang a {
   }
 }
 @media screen and (min-width: 1000px) {
-  .services {
-    height: 100vh;
+  .services-title {
+    font-size: 5rem;
+    line-height: 5rem;
   }
   .services-container {
     max-width: 1400px;
@@ -1656,8 +1677,7 @@ body.header-white .lang a {
   .services-item {
     position: relative;
     width: 32%;
-    top: 20rem;
-    opacity: 0;
+    opacity: 1;
   }
   .services-item:hover .services-item-link {
     -webkit-filter: grayscale(20%);
@@ -1693,7 +1713,7 @@ body.header-white .lang a {
 	width: 100vw;	*/
 .case {
   position: relative;
-  padding-top: 6rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1721,15 +1741,15 @@ body.header-white .lang a {
 }
 .case-info {
   padding-left: 2rem;
-  color: #444;
+  color: #fff;
 }
 .case-info-item {
-  opacity: 0;
-  left: -80px;
+  opacity: 1;
   position: relative;
 }
 .case-info h2 {
   margin-bottom: 2rem;
+  line-height: 3rem;
 }
 @media screen and (min-width: 768px) {
   .case {

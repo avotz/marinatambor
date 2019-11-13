@@ -1,9 +1,9 @@
 const $ = require('jquery');
 require('./vendor/jquery.magnific-popup.min.js');
 require('./vendor/smooth-scrollbar.js');
-import ScrollMagic from 'scrollmagic'; 
+/*import ScrollMagic from 'scrollmagic'; 
 import { TimelineMax, TweenMax, Linear } from 'gsap';
-import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';*/
 import 'simplebar';
 const hoverintent = require('hoverintent');
 
@@ -54,7 +54,7 @@ var $btnMenu = $('#btn-menu'),
         });
 });
 
-  var Scrollbar = window.Scrollbar;
+  //var Scrollbar = window.Scrollbar;
 
   //Scrollbar.init(document.querySelector('.scroll-wrapper'));
    
@@ -68,55 +68,55 @@ var $btnMenu = $('#btn-menu'),
       cssEase: 'linear'
   });*/
 
-  if(isHome()){
-var controller = new ScrollMagic.Controller();
+//   if(isHome()){
+// var controller = new ScrollMagic.Controller();
 
 
-var showIntroDescriptionAnim = new TimelineMax();
-var hideIntroDescriptionAnim = new TimelineMax();
-var ChangeBGColorIntroAnim = new TimelineMax();
+// var showIntroDescriptionAnim = new TimelineMax();
+// var hideIntroDescriptionAnim = new TimelineMax();
+// var ChangeBGColorIntroAnim = new TimelineMax();
   
-   showIntroDescriptionAnim.to('.banner-title h3', .2, {opacity: 1, color: '#254E7B', ease:Linear.easeNone});
-   showIntroDescriptionAnim.to('.banner-title p', .3, {opacity: 1, color: '#444', ease:Linear.easeNone});
+//    showIntroDescriptionAnim.to('.banner-title h3', .2, {opacity: 1, color: '#254E7B', ease:Linear.easeNone});
+//    showIntroDescriptionAnim.to('.banner-title p', .3, {opacity: 1, color: '#444', ease:Linear.easeNone});
 
-   hideIntroDescriptionAnim.to('.banner-title', .3, {opacity: 0, ease:Linear.easeNone});
-   //hideIntroDescriptionAnim.to('.intro', .1, {backgroundColor: '#444', ease:Linear.easeNone});
-   //ChangeBGColorIntroAnim.to(".intro",1, {backgroundColor: '#444',  ease:Linear.easeNone});
-   //ChangeBGColorIntroAnim.staggerTo(".services-item",1, {top: '0', ease:Linear.easeNone}, 0.25 );
+//    hideIntroDescriptionAnim.to('.banner-title', .3, {opacity: 0, ease:Linear.easeNone});
+//    //hideIntroDescriptionAnim.to('.intro', .1, {backgroundColor: '#444', ease:Linear.easeNone});
+//    //ChangeBGColorIntroAnim.to(".intro",1, {backgroundColor: '#444',  ease:Linear.easeNone});
+//    //ChangeBGColorIntroAnim.staggerTo(".services-item",1, {top: '0', ease:Linear.easeNone}, 0.25 );
 
-   var scene = new ScrollMagic.Scene({triggerElement: ".intro", triggerHook: 'onCenter'})
-    .addTo(controller)
-    .setTween(showIntroDescriptionAnim);
+//    var scene = new ScrollMagic.Scene({triggerElement: ".intro", triggerHook: 'onCenter'})
+//     .addTo(controller)
+//     .setTween(showIntroDescriptionAnim);
 
 
-  var scene2 = new ScrollMagic.Scene({triggerElement: ".services", /*duration:450*/ triggerHook: 'onEnter', offset: 360})
-    .addTo(controller)
-    .setTween(hideIntroDescriptionAnim);
+//   var scene2 = new ScrollMagic.Scene({triggerElement: ".services", /*duration:450*/ triggerHook: 'onEnter', offset: 360})
+//     .addTo(controller)
+//     .setTween(hideIntroDescriptionAnim);
 
-  var scene3 = new ScrollMagic.Scene({triggerElement: ".services",/*duration:400,*/ triggerHook: 'onEnter', offset: 203})
-    .addTo(controller)
-    .setTween(TweenMax.to(".page-bg",.5, {opacity: 0,  ease:Linear.easeNone}));
+//   var scene3 = new ScrollMagic.Scene({triggerElement: ".services",/*duration:400,*/ triggerHook: 'onEnter', offset: 203})
+//     .addTo(controller)
+//     .setTween(TweenMax.to(".page-bg",.5, {opacity: 0,  ease:Linear.easeNone}));
 
-  var scene4 = new ScrollMagic.Scene({triggerElement: ".services", triggerHook: 'onCenter'})
-    .addTo(controller)
-    //.setTween(ChangeBGColorIntroAnim);
-    .setTween(TweenMax.staggerTo(".services-item",.5, {top: '0',opacity: 1, ease:Linear.easeNone}, 0.25 ));
+//   var scene4 = new ScrollMagic.Scene({triggerElement: ".services", triggerHook: 'onCenter'})
+//     .addTo(controller)
+//     //.setTween(ChangeBGColorIntroAnim);
+//     .setTween(TweenMax.staggerTo(".services-item",.5, {top: '0',opacity: 1, ease:Linear.easeNone}, 0.25 ));
 
-    var scene5 = new ScrollMagic.Scene({triggerElement: ".case", triggerHook: 'onEnter',offset: 203})
-    .addTo(controller)
-    //.setTween(ChangeBGColorIntroAnim);
-    .setTween(TweenMax.to(".page-bg",.5, {opacity: 1,  ease:Linear.easeNone}));
+//     var scene5 = new ScrollMagic.Scene({triggerElement: ".case", triggerHook: 'onEnter',offset: 203})
+//     .addTo(controller)
+//     //.setTween(ChangeBGColorIntroAnim);
+//     .setTween(TweenMax.to(".page-bg",.5, {opacity: 1,  ease:Linear.easeNone}));
 
-    var scene6 = new ScrollMagic.Scene({triggerElement: ".case", duration:400 , triggerHook: 'onEnter', offset: 203})
-    .addTo(controller)
-    //.setTween(ChangeBGColorIntroAnim);
-    .setTween(TweenMax.to(".parallax",1, {y: '-20%',  ease:Linear.easeNone}));
+//     var scene6 = new ScrollMagic.Scene({triggerElement: ".case", duration:400 , triggerHook: 'onEnter', offset: 203})
+//     .addTo(controller)
+//     //.setTween(ChangeBGColorIntroAnim);
+//     .setTween(TweenMax.to(".parallax",1, {y: '-20%',  ease:Linear.easeNone}));
 
-    var scene7 = new ScrollMagic.Scene({triggerElement: ".case", /*duration:100 ,*/ triggerHook: 'onEnter', offset: 303})
-    .addTo(controller)
-    .setTween(TweenMax.staggerTo(".case-info-item",.5, {left: '0', opacity: 1, ease:Linear.easeNone}, 0.25 ));
+//     var scene7 = new ScrollMagic.Scene({triggerElement: ".case", /*duration:100 ,*/ triggerHook: 'onEnter', offset: 303})
+//     .addTo(controller)
+//     .setTween(TweenMax.staggerTo(".case-info-item",.5, {left: '0', opacity: 1, ease:Linear.easeNone}, 0.25 ));
 
-  }
+//   }
   function isHome(){
       return $('body').hasClass('home');
     }

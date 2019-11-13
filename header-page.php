@@ -30,10 +30,10 @@
                   <a href="<?php echo esc_url( home_url( '/home' ) ); ?>">EN</a> | <a href="<?php echo esc_url( home_url( '/inicio' ) ); ?>">ES</a>
                 </div>
               </div>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-marina-cobano-preserve2.png" alt="Marina Tambor"></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-marina-cobano-preserve3.png" alt="Marina Tambor"></a>
               <div class="header-contact">
                
-                <a href="#" class="btn success"><span class="text">Contact Us</span>
+                <a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="btn success"><span class="text">Contact Us</span>
                 <span class="icon"><i class="fas fa-envelope"></i></span></a>
               </div>
               

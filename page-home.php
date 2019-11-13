@@ -17,31 +17,17 @@ get_header();
 
 <section class="banner">
 
-<div class="banner-title">
-	<?php rewind_posts(); ?>
-	<?php query_posts('post_type=page&page_id=102'); ?>
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<?php the_title('<h3 class="">', '</h3>'); ?>
-				<?php the_content(); ?>
-			
 
-		<?php endwhile; ?>
-		<!-- post navigation -->
-		
-	<?php endif; ?>
-	<!-- <h3 class="">Project Tambor Marina</h3>
-	<p class="">Punta Piedra Amarilla, PPA, is a property with 3.5 kilometers of coast dunk over Whale Bay where the famous Playa Tambor. Because of its location, beauty and unique terrain, PPA is a unique property for any tourism development. </p>
-	<p>In a certain corner of the coast, have been carrying out all research and inquiry, to know for sure about the suitability of that location to develop a Marine there and the results have been excellent.</p> -->
-</div> 
 
 <div class="home-video">
 
 		  <div class="home-video-content">
 			  <div style="padding:56.25% 0 0 0;position:relative;">
-			  <!-- <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/zSJuTb_daK0?controls=0&autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+			  <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/ECw6staLSbE?autoplay=1&rel=1&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			  
-			  <iframe class="video" src="https://player.vimeo.com/video/371253013?autoplay=1&title=0&byline=0&portrait=0&loop=1&color=cb0000" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-				</div><script src="https://player.vimeo.com/api/player.js"></script>
+			  <!-- <iframe class="video" src="https://player.vimeo.com/video/371253013?autoplay=1&title=0&byline=0&portrait=0&loop=1&color=cb0000" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+				</div>
+				<!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
 		  
 			  <!-- <video preload="" autobuffer="" loop="loop" autoplay="autoplay">
 				 
@@ -57,6 +43,20 @@ get_header();
 </section>
 
 <section class="intro">
+	<div class="inner">
+		<?php rewind_posts(); ?>
+		<?php query_posts('post_type=page&page_id=102'); //102 52 ?>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php the_title('<h3 class="">', '</h3>'); ?>
+					<?php the_content(); ?>
+				
+
+			<?php endwhile; ?>
+			<!-- post navigation -->
+			
+		<?php endif; ?>
+
+	</div>
 
 
 </section>
@@ -115,7 +115,7 @@ get_header();
    <h2 class="case-info-item ">How to get there</h2>
 	<p class="case-info-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua.</p>
-	<a href="#" class="btn success case-info-item">See more</a>
+	<a href="#" class="btn secondary case-info-item">See more</a>
  </div>
 </div>
 </section>
