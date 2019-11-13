@@ -2,17 +2,9 @@
 
 if (function_exists('pll_register_string')) {
 
-    pll_register_string('About Us Footer', 'About Us Footer', 'ALO');
-    pll_register_string('Ultimas Noticias', 'Ultimas Noticias', 'ALO');
-    pll_register_string('Siguenos', 'Siguenos', 'ALO');
-    pll_register_string('Desarrollado', 'Desarrollado', 'ALO');
-    pll_register_string('Consulta Facturas', 'Consulta Facturas', 'ALO');
-    pll_register_string('Pago Banco Nacional', 'Pago Banco Nacional', 'ALO');
-    pll_register_string('Pago Banco Costa Rica', 'Pago Banco Costa Rica', 'ALO');
-    pll_register_string('Documentos', 'Documentos', 'ALO');
-    pll_register_string('Leer más', 'Leer más', 'ALO');
-    pll_register_string('Horario', 'Horario', 'ALO');
-    pll_register_string('Banner Texto', 'Banner Texto', 'ALO');
+    pll_register_string('See details', 'See details', 'ALO');
+    pll_register_string('contact-us', 'contact-us', 'ALO');
+   
     
    
     /** woocommerce */

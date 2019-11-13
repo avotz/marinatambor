@@ -90,7 +90,7 @@ get_header();
 						<div class="services-item-content">
 							<?php the_excerpt(); ?>
 						
-						<div  class="btn success">See details</div>
+						<div  class="btn success"><?php pll_e('See details'); ?></div>
 						</div>
 					
 					
