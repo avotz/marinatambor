@@ -112,10 +112,8 @@ get_header();
  	<iframe src="https://www.google.com/maps/d/embed?mid=18F5LzM2XwAC6a6b2zz1_Q0fSz6BaQGk_" width="640" height="480"></iframe>
  </div>
  <div class="case-info">
-   <h2 class="case-info-item ">How to get there</h2>
-	<p class="case-info-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua.</p>
-	<a href="#" class="btn secondary case-info-item">See more</a>
+ 	<?php dynamic_sidebar( 'how-to-get-there' ); ?>
+   
  </div>
 </div>
 </section>
