@@ -48,7 +48,7 @@ get_header();
 					});
 				}
 				</script>
-			  <!-- <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/ECw6staLSbE?autoplay=1&rel=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+			  <!-- <iframe class="video" style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/ECw6staLSbE?autoplay=1&rel=0&controls=0&loop=1&showinfo=0," frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 			  
 			  <!-- <iframe class="video" src="https://player.vimeo.com/video/371253013?autoplay=1&title=0&byline=0&portrait=0&loop=1&color=cb0000" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
 				</div>
