@@ -206,3 +206,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/translate_strings.php';
+
