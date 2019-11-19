@@ -23,7 +23,7 @@ get_header();
 
 		  <div class="home-video-content">
 			  <div class="loading-video">
-			  		loading...
+			  		<h3>Loading...</h3>
 			  </div>
 		  		
 			  <div style="padding:56.25% 0 0 0;position:relative;">
