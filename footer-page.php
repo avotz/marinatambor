@@ -19,6 +19,9 @@
                 
               </div>
          </div>
+         <div class="copyright">
+            Copyright &copy; 2019 Avotz
+         </div>
       </footer>
 
 	
