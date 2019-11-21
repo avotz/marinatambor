@@ -13,26 +13,11 @@
 
 <footer class="footer">
          <div class="footer-container flex-container-sa">
-            <div class="footer-item footer-blog">
-                <?php dynamic_sidebar( 'about-us-footer' ); ?>
-                <!-- <h4>About Us</h4>
-                <p>A multidisciplinary team, with high experience in real estate, legal consulting and project and business management.</p>
-                <a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="btn success">Contact Us</a> -->
-            </div>
-            <div class="footer-item footer-contact">
-                <div class="footer-contact-item">
-                <?php dynamic_sidebar( 'contact-footer' ); ?>
-                  <!-- <h4>Costa Rica</h4>
-                  <p>Marina Tambor <br>
-                  Tel:506+ 8317-0550</p> -->
-                </div>
-                <div class="footer-contact-item footer-social">
-                  <h4>Social</h4>
-                  <a href="#" class=""><i class="fab fa-facebook"></i></a>
-                  <a href="#" class=""><i class="fab fa-twitter"></i></a>
-                  <a href="#" class=""><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
+            
+            <div class="footer-logos">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-marina-cobano-preserve3.png" alt="Marina Tambor"></a>
+                
+              </div>
          </div>
       </footer>
 
