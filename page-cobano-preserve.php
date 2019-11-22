@@ -32,8 +32,8 @@ get_header('page');
 		endwhile; // End of the loop.
         ?>
         <div class="txt-center">
-            <h2>Interactive Map</h2>
-            <h3>Click the map point to show details </h3>
+            <h2><?php pll_e('Interactive Map'); ?></h2>
+            <h3><?php pll_e('Click the map point to show details'); ?></h3>
         </div>
         
         <section class="interactive-map" data-simplebar>
@@ -79,7 +79,7 @@ get_header('page');
                                                     <?php the_content() ?>
                                                 </div>
                                                 
-                                                <a href="#0" class="cd-popup-close img-replace">Close</a>
+                                                <a href="#0" class="cd-popup-close img-replace"><?php pll_e('Close'); ?></a>
                                             </div> <!-- cd-popup-container -->
                                         </div> <!-- cd-popup -->
                                         

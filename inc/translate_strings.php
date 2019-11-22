@@ -5,8 +5,10 @@ if (function_exists('pll_register_string')) {
     pll_register_string('See details', 'See details', 'ALO');
     pll_register_string('Contact Us', 'Contact Us', 'ALO');
     pll_register_string('contact-us', 'contact-us', 'ALO');
-   
-    
+    pll_register_string('About the project', 'About the project', 'ALO');
+    pll_register_string('Interactive Map', 'Interactive Map', 'ALO');
+    pll_register_string('Click the map point to show details', 'Click the map point to show details', 'ALO');
+    pll_register_string('Close', 'Close', 'ALO');
    
     /** woocommerce */
     // pll_register_string('Book Now', 'Book Now', 'ALO');

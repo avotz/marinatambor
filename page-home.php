@@ -83,7 +83,7 @@ get_header();
 </section>
 <section class="services">
 
-<h2 class="services-title">About the project</h2>
+<h2 class="services-title"><?php pll_e('About the project'); ?></h2>
 <div class="services-container flex-container-sa">
 
 <?php 
