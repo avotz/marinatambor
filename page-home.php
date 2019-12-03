@@ -66,7 +66,7 @@ get_header();
 <section class="intro">
 	<div class="inner">
 		<?php rewind_posts(); ?>
-		<?php query_posts('post_type=page&page_id=52'); //102 52 ?>
+		<?php query_posts('post_type=page&page_id=102'); //102 52 ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<?php the_title('<h3 class="">', '</h3>'); ?>
 					<?php the_content(); ?>
