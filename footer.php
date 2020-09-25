@@ -33,7 +33,7 @@
             </div> -->
          </div>
          <div class="copyright">
-            Copyright &copy; 2019 Avotz
+            Copyright &copy; <?= Date('Y') ?> Avotz
          </div>
       </footer>
 
