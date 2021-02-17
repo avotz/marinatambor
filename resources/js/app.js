@@ -6,6 +6,7 @@ import { TimelineMax, TweenMax, Linear } from 'gsap';
 import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';*/
 import 'simplebar';
 const hoverintent = require('hoverintent');
+import 'slick-carousel';
 
 ;(function($){
 
@@ -54,6 +55,15 @@ var $btnMenu = $('#btn-menu'),
         });
 });
 
+$('.js-map-gallery').slick({
+  dots: false,
+  autoplay:true,
+  arrows: true,
+  cssEase: 'linear',
+  prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" style="width: 2.5rem;height:2.5rem;color:#00BAD2;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button>',
+  nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" style="width: 2.5rem;height:2.5rem;color:#00BAD2;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button>',
+ 
+});
   //var Scrollbar = window.Scrollbar;
 
   //Scrollbar.init(document.querySelector('.scroll-wrapper'));

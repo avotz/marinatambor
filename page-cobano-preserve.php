@@ -77,6 +77,27 @@ get_header('page');
                                                 <div class="info">
                                                     <h3><?php the_title() ?></h3>
                                                     <?php the_content() ?>
+                                                    <?php if( function_exists( 'rwmb_meta' ) ) :
+                                                        $images = rwmb_meta('mt-gallery', 'type=image&size=large');
+
+                                                
+                                                        if ($images) : ?>
+                                                            
+                                                                <div class="js-map-gallery">
+                                            
+                                                                <?php foreach ($images as $image) : ?>
+                                                                    
+                                                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" class="">
+                                                                    
+                                                                    
+                                                                    
+                                                                <?php endforeach ?>
+                                        
+                                                                </div>
+                                                            
+                                                                        
+                                                        <?php endif ?>
+                                                    <?php endif ?>	
                                                 </div>
                                                 
                                                 <a href="#0" class="cd-popup-close img-replace"><?php pll_e('Close'); ?></a>

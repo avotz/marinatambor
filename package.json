@@ -15,7 +15,8 @@
         "stylus": "^0.54.7",
         "stylus-loader": "^3.0.2",
         "vue-template-compiler": "^2.6.10",
-        "jquery": "^3.2"
+        "jquery": "^3.2",
+        "slick-carousel": "^1.8.1"
     },
     "dependencies": {
         "gsap": "^2.1.3",
