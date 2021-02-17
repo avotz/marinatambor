@@ -46,7 +46,7 @@ get_header('page');
                                 //'order' => 'DESC',
                                 //'lang' => '', // use language slug in the query
                                 'orderby' => array('menu_order' => 'DESC', 'title' => 'DESC'),
-                                'posts_per_page' => 7,
+                                'posts_per_page' => 12,
                                 'paged' => 1
                             
                             );
