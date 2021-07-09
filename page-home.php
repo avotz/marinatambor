@@ -63,12 +63,12 @@ get_header();
 
 </section>
 
-<section class="intro">
+<section class="intro" style="color:black;">
 	<div class="inner">
 		<?php rewind_posts(); ?>
 		<?php query_posts('post_type=page&page_id=102'); //102 52 ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<?php the_title('<h3 class="">', '</h3>'); ?>
+					<?php the_title('<h3 class="" style="color:black;">', '</h3>'); ?>
 					<?php the_content(); ?>
 				
 
@@ -132,7 +132,7 @@ get_header();
  <div class="case-media">
  	<iframe src="https://www.google.com/maps/d/embed?mid=18F5LzM2XwAC6a6b2zz1_Q0fSz6BaQGk_" width="640" height="480"></iframe>
  </div>
- <div class="case-info">
+ <div class="case-info" style="color:black;">
  	<?php dynamic_sidebar( 'how-to-get-there' ); ?>
    
  </div>

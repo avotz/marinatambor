@@ -30,9 +30,7 @@
       <header class="header">
           <div class="header-container flex-container-sb">
             <div class="header-btn-menu">
-              <div class="lang">
-                    <a href="<?php echo esc_url( home_url( '/home' ) ); ?>">EN</a> | <a href="<?php echo esc_url( home_url( '/inicio' ) ); ?>">ES</a>
-                  </div>
+              
               </div>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-marina-cobano-preserve3.png" alt="Marina Tambor"></a>
               <div class="header-contact">
@@ -61,7 +59,9 @@
 			) );
 			?>
          
-        
+         <div class="lang">
+            <a href="<?php echo esc_url( home_url( '/home' ) ); ?>">EN</a> | <a href="<?php echo esc_url( home_url( '/inicio' ) ); ?>">ES</a>
+          </div>
     </div>
 
 
